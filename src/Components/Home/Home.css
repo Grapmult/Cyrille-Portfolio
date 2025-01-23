@@ -1,0 +1,157 @@
+/* Home Section */
+.home {
+  height: 54.5vh;
+  color: white;
+  background: linear-gradient(135deg, #205488, #001cce);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  text-align: center;
+}
+
+/* Content Wrapper */
+.home-content {
+  text-align: center;
+  padding: 20px;
+  width: 100%;
+  max-width: 800px;
+}
+
+/* Heading Styles */
+.home-heading {
+  font-size: 3rem;
+  font-weight: 700;
+  color: #fff;
+  margin-bottom: 20px;
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.4);
+}
+
+/* Typewriter Effect Text */
+.typewriter-text {
+  font-size: 1.5rem;
+  margin-top: 20px;
+  color: #e7c816;
+  font-weight: 500;
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.4);
+}
+
+/* Action Buttons */
+.button-for-action {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  margin-top: 40px;
+}
+
+/* Hire Me Button */
+.hire-me-button {
+  background-color: #ff854c;
+  text-align: center;
+  width: 180px;
+  padding: 15px;
+  border-radius: 50px;
+  cursor: pointer;
+  border: 2px solid #ffc107;
+  font-size: 17px;
+  font-family: "Arial", sans-serif;
+  color: white;
+  transition: all 0.4s ease-in-out;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.hire-me-button:hover {
+  background: linear-gradient(135deg, #ff854c, #ffcc00);
+  color: black;
+  transform: scale(1.1);
+  box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.3);
+}
+
+/* Get Resume Button */
+.get-resume-button {
+  background-color: #e7c809;
+  text-align: center;
+  width: 180px;
+  padding: 15px;
+  border-radius: 50px;
+  cursor: pointer;
+  border: 2px solid #ffc107;
+  font-size: 17px;
+  font-family: "Arial", sans-serif;
+  transition: all 0.4s ease-in-out;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.get-resume-button:hover {
+  background: linear-gradient(135deg, #e7c809, #ffd700);
+  color: black;
+  transform: scale(1.1);
+  box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.3);
+}
+
+.get-resume-button a {
+  text-decoration: none;
+  color: black;
+  font-weight: 600;
+}
+
+/* Theme Toggle Button */
+.theme-change {
+  height: 50px;
+  width: 50px;
+  background-color: #001cce;
+  position: fixed;
+  top: 50%;
+  right: 20px;
+  transform: translateY(-50%);
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+  z-index: 10;
+  transition: transform 0.4s ease-in-out, background-color 0.3s ease-in-out;
+}
+
+.theme-change:hover {
+  transform: scale(1.1);
+  background-color: #ff854c;
+}
+
+/* Spinning Sun Icon Animation */
+.sun-theme-icon {
+  animation: rotation infinite 5s linear;
+}
+
+@keyframes rotation {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+  .home-heading {
+    font-size: 2.5rem;
+  }
+
+  .typewriter-text {
+    font-size: 1.3rem;
+  }
+
+  .hire-me-button,
+  .get-resume-button {
+    width: 150px;
+    padding: 10px;
+  }
+
+  .theme-change {
+    right: 10px;
+    width: 40px;
+    height: 40px;
+  }
+}

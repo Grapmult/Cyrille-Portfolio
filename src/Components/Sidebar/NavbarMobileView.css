@@ -1,0 +1,89 @@
+/* Mobile Navbar Container */
+.mobile-view-navbar {
+    position: sticky; /* Keeps it visible on scroll */
+    top: 0;
+    z-index: 1001; /* Ensure it appears above other elements */
+    background-color: brown;
+    width: 100%;
+}
+
+/* Navbar Header */
+.navbar-header {
+    display: flex;
+    align-items: center;
+    background-color: brown;
+    color: white;
+    padding: 10px;
+}
+
+.navbar-header p svg {
+    margin-left: 10px;
+    cursor: pointer;
+    margin-top: 5px;
+    color: white;
+    transition: transform 0.3s ease-in-out;
+}
+
+.navbar-header p svg:hover {
+    transform: scale(1.2);
+}
+
+/* Dropdown Menu for Mobile View */
+.mobile-navbar {
+    height: auto;
+    width: 100%;
+    background-color: #8b4513; /* Darker shade for dropdown */
+    margin-top: 10px;
+    padding: 15px;
+    border-top: 2px solid #c2d611; /* Decorative border */
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* List Items in the Navbar */
+.mobile-navbar ul li {
+    color: white;
+    cursor: pointer;
+    text-decoration: none;
+    list-style-type: none;
+    margin: 15px 0;
+    display: flex;
+    align-items: center;
+    font-size: 18px;
+    transition: all 0.3s ease-in-out;
+}
+
+.mobile-navbar ul li a {
+    text-decoration: none;
+    color: white;
+    display: flex;
+    align-items: center;
+    width: 100%;
+}
+
+/* Icon Styling */
+.mobile-navbar ul li svg {
+    margin-right: 10px;
+}
+
+/* Active Link Styling */
+.nav-item-mobileview .active {
+    background-color: #c2d611;
+    color: black;
+    text-decoration: none;
+    border-radius: 10px;
+    padding: 10px;
+    width: 100%;
+}
+
+/* Hover Effect */
+.mobile-navbar ul li:hover {
+    background-color: #a0522d; /* Slightly lighter shade */
+    transform: translateX(5px); /* Subtle shift on hover */
+}
+
+/* Mobile Navbar Hidden on Desktop */
+@media (min-width: 1000px) {
+    .mobile-view-navbar {
+        display: none;
+    }
+}

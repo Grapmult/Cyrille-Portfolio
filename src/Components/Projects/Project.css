@@ -1,0 +1,94 @@
+.container {
+    margin-top: 50px;
+  }
+  
+  .section-title {
+    text-align: center;
+    margin-bottom: 30px;
+  }
+  
+  .section-title h5 {
+    font-size: 24px;
+    font-weight: bold;
+  }
+  
+  .section-title .line {
+    width: 60px;
+    height: 4px;
+    background-color: #6c63ff;
+    margin: 10px auto 0;
+  }
+  
+  .project-list {
+    margin: 10px;
+    padding: 20px;
+    border-radius: 10px;
+    background-color: #fff;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    transition: box-shadow 0.3s ease, transform 0.2s ease;
+  }
+  
+  .project-list:hover {
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2);
+    transform: translateY(-3px);
+  }
+  
+  .project-list-opened {
+    border-left: 5px solid #6c63ff;
+  }
+  
+  .title-and-collapse-option {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .title-and-collapse-option h5 {
+    font-size: 20px;
+    font-weight: bold;
+    margin: 0;
+  }
+  
+  .description {
+    margin: 10px 0;
+    font-size: 16px;
+    line-height: 1.5;
+  }
+  
+  .tech-used-in-project {
+    margin: 10px -13px;
+  }
+  
+  .tech-used-in-project p {
+    padding: 8px;
+    text-align: center;
+    border-radius: 10px;
+    color: #fff;
+    font-weight: bold;
+    font-size: 14px;
+  }
+  
+  .tech-used-in-project p:hover {
+    filter: brightness(0.9);
+  }
+  
+  .live-demo-button {
+    text-align: center;
+    margin-top: 15px;
+  }
+  
+  .live-demo-button a {
+    padding: 10px 20px;
+    border-radius: 20px;
+    background-color: #6c63ff;
+    color: white;
+    font-weight: bold;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+  }
+  
+  .live-demo-button a:hover {
+    background-color: #4a47a3;
+  }
+  

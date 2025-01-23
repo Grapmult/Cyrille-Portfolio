@@ -1,0 +1,116 @@
+/* Main Sidebar Section */
+.sidebar-section {
+    display: flex;
+    height: 58vh; /* Ensures full height for sidebar container */
+    position: relative;
+    background-color: #205488; /* Background for the main layout */
+}
+
+/* Sidebar when collapsed */
+.sidebar {
+    height: 100vh;
+    width: 95px;
+    position: fixed; /* Keep the sidebar fixed on scroll */
+    background-color: #205488;
+    transition: width 0.3s ease-in-out;
+    overflow-x: hidden; /* Hide content outside the width */
+    z-index: 1000; /* Ensure sidebar is above other content */
+}
+
+/* Sidebar when expanded */
+.sidebar-expand {
+    width: 230px; /* Expanded width */
+    background-color: #205488;
+    position: fixed; /* Stays fixed */
+    height: 100vh;
+    transition: width 0.3s ease-in-out;
+    overflow-y: auto; /* Allows vertical scrolling if content exceeds height */
+    z-index: 1000;
+}
+
+/* Sidebar Expand/Collapse Icon */
+.icon-for-sidebar-expand-and-collapse {
+    display: flex;
+    align-items: right;
+    justify-content: right;
+    cursor: pointer;
+}
+
+.icon-for-sidebar-expand-and-collapse p svg {
+    background-color: #19092c;
+    padding: 5px;
+    color: white;
+    border-radius: 5px;
+    margin-top: 50px;
+}
+
+/* Sidebar Profile Picture */
+.sidebar-profil-pic img {
+    border-radius: 90px;
+    margin-top: 10px;
+    height: 125px;
+    width: 125px;
+    display: flex;
+    vertical-align: middle;
+    object-fit: cover;
+    margin: 0 auto;
+    border: 3px solid yellow;
+}
+
+/* Navigation Items */
+.navbar-items ul li {
+    color: white;
+    list-style-type: none;
+    margin-top: 30px;
+    cursor: pointer;
+    text-decoration: none;
+    padding: 10px;
+}
+
+.navbar-items ul li a {
+    text-decoration: none;
+    color: inherit;
+    display: flex;
+    align-items: center;
+    font-size: 18px;
+    transition: all 0.2s ease-in-out;
+}
+
+/* Icons with spacing */
+.navbar-items ul li svg {
+    margin-right: 10px;
+}
+
+/* Hover Effect */
+.navbar-items ul li:hover {
+    background-color: #14426a;
+    border-left: 4px solid #f9a826;
+    color: yellow;
+    transition: background-color 0.3s ease-in-out;
+}
+
+/* Active Link Highlight */
+.nav-item .active {
+    border-left: 4px solid yellow;
+    color: yellow;
+}
+
+/* Sidebar for smaller screens */
+@media (max-width: 1000px) {
+    .sidebar {
+        display: none;
+    }
+}
+
+/* Content Section to the Right of the Sidebar */
+.container-fluid {
+    margin-left: 25px; /* Matches the expanded sidebar width */
+    padding: 20px;
+    height: 100vh;
+    overflow-y: auto; /* Allow content to scroll */
+    transition: margin-left 0.3s ease-in-out;
+}
+
+.container-fluid.sidebar-collapsed {
+    margin-left: 1px; /* Matches the collapsed sidebar width */
+}

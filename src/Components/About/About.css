@@ -1,0 +1,102 @@
+/* About Section */
+.about-section {
+  margin: 50px 80;
+  padding: 80px 20px;
+  background: linear-gradient(135deg, #38004c, #205488);
+  border-radius: 20px;
+  color: white;
+  box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.2);
+}
+
+/* About Row Layout */
+.about-section .row {
+  display: flex; /* Enable flexbox for horizontal alignment */
+  flex-wrap: nowrap; /* Prevent wrapping */
+  align-items: center; /* Center items vertically */
+  justify-content: space-between; /* Space out image and text */
+}
+
+/* About Image */
+.about-image {
+  flex: 1; /* Take equal space */
+  text-align: center;
+}
+
+.about-image img {
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+  border: 5px solid yellow;
+  object-fit: cover;
+  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.3);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.about-image img:hover {
+  transform: scale(1.05);
+  box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.4);
+}
+
+/* About Details */
+.about-details {
+  flex: 2; /* Text takes more space than image */
+  max-width: 120%; /* Ensure text stays confined */
+  margin-left: -550px; /* Add spacing between image and text */
+}
+
+.about-details p {
+  font-size: 1rem;
+  line-height: 1.8;
+  margin-bottom: 20px;
+  color: #f0f0f0;
+}
+
+.about-details p strong {
+  color: #ffd700;
+  font-weight: bold;
+}
+
+/* About Title */
+.about-title h5 {
+  font-size: 2rem;
+  color: #ffd700;
+  text-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+.line {
+  display: block;
+  width: 80px;
+  height: 4px;
+  margin: 10px 0;
+  background-color: yellowgreen;
+  border-radius: 2px;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+  .about-section .row {
+    flex-wrap: wrap; /* Allow wrapping for small screens */
+    justify-content: center; /* Center items for mobile */
+  }
+
+  .about-image {
+    margin: 0 auto;
+  }
+
+  .about-image img {
+    width: 250px;
+    height: 250px;
+  }
+
+  .about-details {
+    margin-left: 0;
+  }
+
+  .about-title h5 {
+    font-size: 1.8rem;
+  }
+
+  .about-details p {
+    font-size: 0.95rem;
+  }
+}

@@ -1,0 +1,101 @@
+/* GrapMult Section */
+.grapmult-section {
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+/* Section Title */
+.grapmult-section .section-title h5 {
+    text-align: center;
+}
+
+/* GrapMult Row */
+.grapmult-section .row {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Three columns */
+    gap: 20px; /* Space between items */
+    justify-content: center; /* Centers the grid */
+}
+
+/* GrapMult Item */
+.grapmult-section .tech-content {
+    background-color: white;
+    padding: 10px;
+    color: black;
+    box-shadow: 15px 9px 9px -2px rgba(230, 224, 224, 0.86);
+    -webkit-box-shadow: 15px 9px 9px -2px rgba(230, 224, 224, 0.86);
+    -moz-box-shadow: 15px 9px 9px -2px rgba(230, 224, 224, 0.86);
+    text-align: center;
+}
+
+/* Highlighted GrapMult Item */
+.grapmult-section .tech-content-marked {
+    background-color: tomato;
+    color: white;
+}
+
+/* GrapMult Item Content */
+.grapmult-section .tech-content p {
+    text-align: center;
+    padding-top: 30px;
+    font-size: 20px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+/* Hover Effect */
+.grapmult-section .tech-content:hover {
+    background-color: #FF854C;
+    color: white;
+    cursor: pointer;
+    transition: background-color 1s;
+    box-shadow: -6px 11px 5px -4px rgba(0, 0, 0, 0.42);
+    -webkit-box-shadow: -6px 11px 5px -4px rgba(0, 0, 0, 0.42);
+    -moz-box-shadow: -6px 11px 5px -4px rgba(0, 0, 0, 0.42);
+}
+
+/* Number Badge */
+.grapmult-section .tech-number {
+    border-radius: 90%;
+    height: 50px;
+    width: 50px;
+    color: white;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    display: block;
+    line-height: 50px;
+    margin-top: -30px;
+    margin: 0 auto;
+    background-color: tomato;
+}
+
+/* Load More Button */
+.grapmult-section .load-more-grap-mult {
+    background-color: tomato;
+    width: 150px;
+    text-align: center;
+    padding: 10px;
+    color: white;
+    /* justify-content: center;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 35px; */
+    margin: 35px auto;
+    border-radius: 5px;
+    /* margin-bottom: 40px; */
+    cursor: pointer;
+    display: inline-block;
+}
+
+/* Load More Button Hover */
+.grapmult-section .load-more-grap-mult:hover {
+    background-color: blueviolet;
+    transition: background-color 1s;
+}
+
+/* Responsive Layout for GrapMult Section */
+@media (max-width: 768px) {
+    .grapmult-section .row {
+        grid-template-columns: 1fr; /* Single column layout */
+    }
+}
